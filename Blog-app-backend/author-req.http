@@ -1,0 +1,65 @@
+
+### Register User
+POST http://localhost:4000/auth/users
+Content-Type: application/json
+
+{
+    "firstName": "author2",
+    "lastName":"",
+    "email":"author2@gmail.com",
+    "role":"author",
+    "password":"author2",
+    "profileImageUrl":"https://example.com/avatars/user.png"
+}
+###
+
+### Login user
+POST http://localhost:4000/auth/login
+Content-Type: application/json
+
+{
+    "email":"author1@gmail.com",
+    "password":"author1"
+}
+###
+
+### Logout user
+GET http://localhost:4000/auth/logout
+###
+
+### Create a Article
+POST http://localhost:4000/author-api/article
+Content-Type: application/json
+
+{
+    "author":"69b3a9b2b60385f2a0429b73",
+    "title":"Article1 published by author1",
+    "category":"AIML",
+    "content":"AIML Tech is Amazing"
+}
+###
+
+### read a article
+GET http://localhost:4000/author-api/article
+###
+
+### Edit article
+PUT http://localhost:4000/author-api/article
+Content-Type: application/json
+
+{
+    "articleId":"69b3abb5224c5e110281f58b",
+    "title":"Article1 published by author1",
+    "category":"AIML",
+    "content":"AIML Tech is Amazing and Crazy"
+}
+###
+
+### Soft delete
+PATCH http://localhost:4000/author-api/article
+Content-Type: application/json
+
+{
+    "articleId":"69b3abb5224c5e110281f58b",
+    "isArticleActive":false
+}
