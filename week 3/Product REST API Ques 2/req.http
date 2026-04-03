@@ -1,0 +1,44 @@
+//Read all products
+GET http://localhost:4000/product-api/products
+
+###
+
+
+//Read a product by productId
+GET http://localhost:4000/product-api/products/1
+
+###
+
+
+//Create new product
+POST http://localhost:4000/product-api/products
+Content-Type: application/json
+
+{
+    "productId":1,
+    "productName":"Projector",
+    "price":50000,
+    "brand":"Vivitek"
+}
+
+
+###
+
+
+//Update a product by productId
+PUT http://localhost:4000/product-api/products/1
+Content-Type: application/json
+
+{
+    "productId":1,
+    "productName":"Dishwasher",
+    "price":45000,
+    "brand":"Bosch"
+}
+
+
+###
+
+
+//Delete a product by productId
+DELETE http://localhost:4000/product-api/products/1

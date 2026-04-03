@@ -1,0 +1,63 @@
+.main{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 200px;
+}
+
+.card-1{
+    width: 200px;
+    box-shadow: 5px 5px 30px  rgb(170, 74, 25);
+    padding: 50px;
+    border-radius: 5%;
+    background-color: rgb(189, 24, 24);
+    color: aqua;
+    text-align:center;
+}
+
+img{
+    box-shadow: 3px 3px 20px lightblue;
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    display:block;
+    margin:auto;
+}
+
+body{
+    background-color: azure;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navbar{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    background:white;
+    padding:15px;
+    font-weight:bold;
+}
+
+.navbar a{
+    text-decoration:none;
+    color:gray;
+}
+
+.tag{
+    display:block;
+    width:max-content;
+    margin:10px auto;
+    padding:5px 10px;
+    border-radius:20px;
+    font-size:12px;
+    background:lightgray;
+    color:black;
+}
+
+.tech{
+    background:gold;
+}
+
+.fashion{
+    background:pink;
+}
